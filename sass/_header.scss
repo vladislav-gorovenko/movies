@@ -1,0 +1,84 @@
+header {
+  position: relative;
+  background-image: linear-gradient(to bottom, #0e0e0ec3, #0e0e0ec3),
+    url("../img/Movies.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $white-color;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    @include screen-size(450px) {
+      font-size: 5rem;
+    }
+  }
+
+  .link {
+    font-size: 1.8rem;
+    font-weight: 400;
+    transform: translateY(24%);
+  }
+
+  .movie-search {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateY(50%) translateX(-50%);
+    background: $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    border: 1px solid $border-color;
+    border-radius: 0.8rem;
+
+    &__btn,
+    &__input,
+    .fa {
+      padding: 1rem;
+      font-size: 1.5rem;
+    }
+
+    &__input {
+      flex: 1;
+      font-family: sans-serif;
+    }
+
+    &__btn {
+      background: $btn-color;
+      width: 100px;
+      border-left: 1px solid $border-color;
+      border-radius: 0 0.8rem 0.8rem 0;
+      transition: all 0.1s ease-in-out;
+      color: $btn-active;
+
+      &:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      &:active {
+        background: $btn-active;
+        color: $white-color;
+      }
+    }
+
+    @include screen-size(650px) {
+      width: 600px;
+    }
+  }
+}

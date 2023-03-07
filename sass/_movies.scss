@@ -1,0 +1,108 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    margin: 0 2rem;
+    padding-top: 10rem;
+  }
+
+  .movies {
+    width: 100%;
+    &__notice {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      text-align: center;
+      // width: 100%;
+    }
+    &__movie {
+      padding: 2rem 0;
+      &:not(:first-of-type):not(:last-of-type) {
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+      }
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__movie-img {
+      height: 140px;
+      aspect-ratio: 1/1.5;
+      margin-right: 2rem;
+      object-position: center;
+      object-fit: cover;
+    }
+    &__movie-title {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+    &__movie-score {
+      font-size: 1.3rem;
+    }
+    &__movie-star {
+      margin: 0 0.5rem 0 1rem;
+    }
+    &__movie-genre {
+      margin: 0 2rem;
+    }
+    &__movie-watchlist {
+      cursor: pointer;
+      & > * {
+        pointer-events: none;
+      }
+    }
+    .fa-circle-plus,
+    .fa-circle-minus {
+      margin: 0 0.3rem 0 0;
+      font-size: 1.5rem;
+    }
+    .fa-film {
+      font-size: 5rem;
+      margin: 2rem;
+      color: $gray-color;
+    }
+    &__movie-description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      &--top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $back-color;
+      }
+      &--middle {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.2rem;
+        color: $middle-description-color;
+      }
+      &--text {
+        font-size: 1.3rem;
+        color: $movie-description-text-color;
+      }
+    }
+    .read-more {
+      color: $back-color;
+    }
+    &__notice {
+      color: $gray-color;
+    }
+
+    &__empty-notice {
+      font-size: 2rem;
+    }
+
+    &__lets-add {
+      color: $middle-description-color;
+      margin: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+}

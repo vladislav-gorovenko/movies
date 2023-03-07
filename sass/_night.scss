@@ -1,0 +1,43 @@
+$night-text-gray-color: #a5a5a5;
+$night-input-color-1: #2e2e2f;
+$night-input-color-2: #4b4b4b;
+$night-background-color: #121212;
+
+body.night {
+  background: $night-background-color;
+  .movie-search {
+    background: $night-input-color-1;
+    color: $night-text-gray-color;
+    border: 1px solid $night-input-color-1;
+
+    &__input {
+      background: $night-input-color-1;
+      color: $night-text-gray-color;
+    }
+
+    &__btn {
+      background: $night-input-color-2;
+      border: 1px solid $night-input-color-2;
+      color: $white-color;
+    }
+    .fa {
+      color: $night-text-gray-color;
+    }
+  }
+  .movies {
+    &__movie-title,
+    &__movie-score,
+    &__movie-length,
+    &__movie-genre,
+    &__movie-watchlist {
+      color: $white-color;
+    }
+    &__movie-description--text {
+      color: $night-text-gray-color;
+    }
+  }
+
+  .switch {
+    color: $white-color;
+  }
+}

@@ -1,0 +1,17 @@
+@import "./responsive", "./variables", "./reset", "./header", "./movies",
+  "./night";
+
+.switch {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 2rem;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
