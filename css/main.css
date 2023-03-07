@@ -257,6 +257,12 @@ body.night .movies__movie-title, body.night .movies__movie-score, body.night .mo
 body.night .movies__movie-description--text {
   color: #a5a5a5;
 }
+body.night .movies__empty-notice {
+  color: #a5a5a5;
+}
+body.night .movies__lets-add {
+  color: #ffffff;
+}
 body.night .switch {
   color: #ffffff;
 }

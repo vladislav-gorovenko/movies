@@ -35,6 +35,14 @@ body.night {
     &__movie-description--text {
       color: $night-text-gray-color;
     }
+
+    &__empty-notice {
+      color: $night-text-gray-color;
+    }
+
+    &__lets-add {
+      color: $white-color;
+    }
   }
 
   .switch {
