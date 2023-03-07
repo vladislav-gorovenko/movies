@@ -1,6 +1,6 @@
 function generateURL(input, type) {
   // if id - type = i / if title - type = s
-  const baseURL = "http://www.omdbapi.com/";
+  const baseURL = "https://www.omdbapi.com/";
   const searchParameter = `?${type}=${input
     .split(" ")
     .filter((item) => item.trim() != "")
